@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int score;
+
+    cout << "Enter the student's score (0-20): ";
+    cin >> score;
+
+    if (score >= 17 && score <= 20) {
+        cout << "Grade: A" << endl;
+    } else if (score >= 14 && score <= 16) {
+        cout << "Grade: B" << endl;
+    } else if (score >= 10 && score <= 13) {
+        cout << "Grade: C" << endl;
+    } else if (score >= 0 && score <= 9) {
+        cout << "Grade: D" << endl;
+    } else {
+        cout << "Invalid score. Please enter a score between 0 and 20." << endl;
+    }
+
+    return 0;
+}
